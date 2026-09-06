@@ -2,7 +2,7 @@
     <application
         android:icon="@drawable/icon"
         android:theme="@style/AppTheme"
-        android:label="لعبة المطور ياسر"
+        android:label="وقت العلم-اسئلة مغربية عامة"
         android:usesCleartextTraffic="true">
 
         <activity
