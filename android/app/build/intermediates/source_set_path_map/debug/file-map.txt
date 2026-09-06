@@ -1,8 +1,0 @@
-com.yasser.quizgame.app-pngs-0 /data/data/com.termux/files/home/quiz-game/android/app/build/generated/res/pngs/debug
-com.yasser.quizgame.app-resValues-1 /data/data/com.termux/files/home/quiz-game/android/app/build/generated/res/resValues/debug
-com.yasser.quizgame.app-rs-2 /data/data/com.termux/files/home/quiz-game/android/app/build/generated/res/rs/debug
-com.yasser.quizgame.app-mergeDebugResources-3 /data/data/com.termux/files/home/quiz-game/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.yasser.quizgame.app-mergeDebugResources-4 /data/data/com.termux/files/home/quiz-game/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.yasser.quizgame.app-merged_res-5 /data/data/com.termux/files/home/quiz-game/android/app/build/intermediates/merged_res/debug
-com.yasser.quizgame.app-debug-6 /data/data/com.termux/files/home/quiz-game/android/app/src/debug/res
-com.yasser.quizgame.app-main-7 /data/data/com.termux/files/home/quiz-game/android/app/src/main/res
