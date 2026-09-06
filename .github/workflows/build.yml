@@ -49,8 +49,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: yasser-quiz-release
-          path: android/app/build/outputs/bundle/release/app-release.aab 
-                - name: Build Release APK
+          path: android/app/build/outputs/bundle/release/app-release.aab
+
+      - name: Build Release APK
         env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
