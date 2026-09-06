@@ -1,0 +1,44 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.yasser.quizgame"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="35" />
+9-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:3:5-20:19
+12        android:debuggable="true"
+13        android:extractNativeLibs="false"
+14        android:label="لعبة المطور ياسر"
+14-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:5:9-41
+15        android:theme="@style/AppTheme"
+15-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:4:9-40
+16        android:usesCleartextTraffic="true" >
+16-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:6:9-44
+17        <activity
+17-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:8:9-18:20
+18            android:name="com.yasser.quizgame.MainActivity"
+18-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:9:13-41
+19            android:exported="true"
+19-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:11:13-36
+20            android:screenOrientation="portrait" >
+20-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:10:13-49
+21            <intent-filter>
+21-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:13:13-16:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:14:17-69
+22-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:14:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:15:17-77
+24-->/data/data/com.termux/files/home/quiz-game/android/app/src/main/AndroidManifest.xml:15:27-74
+25            </intent-filter>
+26        </activity>
+27    </application>
+28
+29</manifest>
