@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build Android Release
 
 on:
   workflow_dispatch:
@@ -28,11 +28,25 @@ jobs:
         with:
           gradle-version: '7.6.4'
 
-      - name: Build APK
-        run: gradle -p android assembleDebug
+      - name: Decode Keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: echo "$KEYSTORE_BASE64" | base64 --decode > android/yasser-release.jks
 
-      - name: Upload APK
+      - name: Build Release AAB
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          gradle -p android bundleRelease \
+            -Pandroid.injected.signing.store.file="$GITHUB_WORKSPACE/android/yasser-release.jks" \
+            -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD" \
+            -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
+            -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
+
+      - name: Upload AAB
         uses: actions/upload-artifact@v4
         with:
-          name: yasser-quiz-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: yasser-quiz-release
+          path: android/app/build/outputs/bundle/release/app-release.aab
